@@ -4,12 +4,10 @@ import { useState } from "react";
 import { BiCart, BiStore } from "react-icons/bi";
 import { BsGear, BsHouse } from "react-icons/bs";
 import { MdCategory, MdMoney } from "react-icons/md";
-import { HiMenu } from "react-icons/hi"; // Using a standard menu icon
 import { FaAngleRight } from "react-icons/fa";
 
 export default function Sidebar() {
   const [selectedSection, setSelectedSection] = useState("Home");
-  // 'open' controls the expanded state on small screens
   const [open, setOpen] = useState(false);
 
   const Sections = [
